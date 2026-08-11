@@ -4,6 +4,21 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StringUtilitiesTests {
+    public static boolean shortString(String input){
+        return input.length() <=3;
+    }
+
+    public static char firstLetter(String input) {
+        return input.charAt(0);
+    }
+
+    public static String censorAsparagus(String input) {
+        return input.replace("asparagus");
+    }
+
+    public static String bigger(String input) {
+        return input.length();
+    }
     @Test
     public void testShortString() {
         Assert.assertFalse(StringUtilities.shortString("apple"));
